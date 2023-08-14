@@ -1,5 +1,5 @@
 # Makeit.ai
-This is a generative AI tool for synthetic data. It borrows heavily from the generator-discriminator network proposed by https://github.com/LeonGuertler/draGAN
+This is a generative AI tool for synthetic data. It borrows it's core architecture from the generator-discriminator network proposed by https://github.com/LeonGuertler/draGAN
 The goal here is to gather as much knowledge as possible from the experiments with generated data.
 A discrete loss like the f1 score or roc score can be optimized by draGAN which converts the discrete loss into a continous loss for the generator.
 The generator learns to generate samples that do not only mimic distribution of data but optimize a given metric.
