@@ -11,7 +11,6 @@ Early stopping conditions for when generative samples no longer improve model pe
 The batch size for which forward and backward passes for generator and discriminator networks are computed.
 Knowledge from low depth decision trees can help optimize downstream workloads by focusing more on the strongest relationships and leveraging custom feature importance plots within the generation loop (just below the tree plots).
 This generative scheme is especially useful for imbalanced datasets like fault detection settings or anomaly detection
-
 Update: Archhitecture modifications
 An adversarial discriminator module has been added to the generation pipeline. The  adversarial module minimizes the distribution shift between the real and synthetic data. The lamda parameter controls the level of this minimization. Higher lamda values mean higher penalties/losses for the generator for generating data with a distribution far removed from the real data. This might have the negative impact of reducing the base model's performance on the downstream task. 
 Hence, the generator must solve two problems: 1. generate data that improves performance on doenstream task. 2. Generated data distribution must be close enough to real data distribution to a tolerance limit imposed by the user-supplied lamda parameter.
