@@ -1,7 +1,7 @@
 # Makeit.ai
 This is a generative AI tool for synthetic data. It borrows it's core architecture from the generator-discriminator network proposed by https://github.com/LeonGuertler/draGAN
 A discrete loss like the f1 score or roc score can be optimized by draGAN which converts the discrete loss into a continous loss for the generator.
-The generator learns to generate samples that do not only mimic distribution of data but optimize a given metric.
+The generator learns to generate samples that optimize a given metric.
 During sample generation, a low depth decision tree makes a plot of the model's decision procedure. This could help the modeller focus on the most important features at generation time.
 For image data, 3d channel images can be unfurled into a 1d space with the generative model trained on subsets of the data. Alternatively, the generator can be modified to allow processing of 3d images.
 Because the model is trained in splits, knowledge can be aggregated across splits by viewing the plots for each split
